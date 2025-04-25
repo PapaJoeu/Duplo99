@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kev's Bitchin' Print Calculator</title>
+    <meta name="description" content="Interactive print production calculator for layouts and imposition planning.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Main Application Container -->
+    <div class="container">
+
+        <!-- Header with Application Title and Unit Toggle -->
+        <header>
+            <h1>Kev's Bitchin' Print Calculator</h1>
+            <button type="button" id="unitToggleButton">Switch to Metric</button>
+        </header>
+
+        <!-- Main Content Area -->
+        <main>
+
+            <!-- Input Controls and Dimensions Section -->
+            <section class="dimensions">
+
+                <!-- Sheet Dimensions -->
+                <div class="input-group">
+                    <label for="sheetWidth">Sheet Width:</label>
+                    <input type="number" id="sheetWidth" step="0.25">
+                    <label for="sheetLength">Sheet Length:</label>
+                    <input type="number" id="sheetLength" step="0.25">
+                </div>
+
+                <!-- Document Dimensions -->
+                <div class="input-group">
+                    <label for="docWidth">Document Width:</label>
+                    <input type="number" id="docWidth" step="0.25">
+                    <label for="docLength">Document Length:</label>
+                    <input type="number" id="docLength" step="0.25">
+                </div>
+
+                <!-- Gutter Dimensions -->
+                <div class="input-group">
+                    <label for="gutterWidth">Gutter Width:</label>
+                    <input type="number" id="gutterWidth" step="0.125">
+                    <label for="gutterLength">Gutter Length:</label>
+                    <input type="number" id="gutterLength" step="0.125">
+                </div>
+
+            </section>
+
+            <!-- Visualizer Canvas -->
+            <section class="visualizer">
+                <canvas id="layoutCanvas" width="600" height="400"></canvas>
+            </section>
+
+            <!-- Program Sequence Display -->
+            <section class="sequence">
+                <h2>Program Sequence</h2>
+                <div id="programSequence"></div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Kev's Bitchin' Print Calculator</p>
+        </footer>
+
+    </div>
+
+    <!-- Script Inclusion -->
+    <script src="app.js"></script>
+
+</body>
+</html>
