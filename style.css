@@ -1,0 +1,129 @@
+/* Kev's Bitchin' Print Calculator - Updated Stylesheet */
+
+/* General Reset and Defaults */
+body, h1, h2, p, div, button, input {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#unitToggleButton {
+    padding: 8px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+
+#unitToggleButton:hover {
+    background-color: #0056b3;
+}
+
+/* Main Content Layout */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.dimensions, .visualizer, .sequence {
+    flex: 1;
+    margin: 10px;
+    min-width: 280px;
+}
+
+/* Input Groups */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Canvas and Visualization */
+.visualizer canvas {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fafafa;
+}
+
+/* Program Sequence Display */
+.sequence h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.sequence div {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+
+.sequence ol {
+    padding-left: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding-top: 15px;
+    margin-top: 20px;
+    border-top: 2px solid #ddd;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+
+    .dimensions, .visualizer, .sequence {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
